@@ -1,0 +1,254 @@
+/*NAVBAR*/
+::selection{
+   background-color: #facf65;
+    color: white;
+}
+body{
+    background-color: lightsteelblue;
+}
+.nav{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    background-color: lightsteelblue;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    float: left;
+    width: 15%;
+    font-size: 16pt;
+}
+.nav .header{
+    float: left;
+    width: 40%;
+    text-align: center;
+    font-size: 25pt;
+}
+.nav a.active{
+    background-color: lightsteelblue;
+    text-decoration: underline;
+}
+.nav a:hover{
+    color: #ffe6a9;
+}
+/*RESPONSIVE TOPNAV*/
+.nav .icon{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+    .nav .header{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav.responsive {
+        position: sticky;
+        height: 10%;
+    }
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive a{
+        float: none;
+        display: block;
+    }
+}
+/*PADDING FOR CONTENT*/
+.content{
+    padding: 20px;
+    padding-top: 10px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+}
+.content.thinner{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+@media screen and (max-width: 1000px) {
+    .content.thinner{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+/*ABOUT PAGE*/
+.left-about{
+    width: 30%;
+}
+.right-about{
+    padding: 10px;
+    width: 65%;
+}
+.response{
+    display: none;
+}
+@media screen and (max-width: 1100px) {
+    .left-about{
+        display: none;
+    }
+    .right-about{
+        width: 100%;
+        padding-left: 0;
+    }
+    .response{
+        display: contents;
+    }
+}
+/*ROWS IN ARTICLES*/
+/* Clear floats after the columns */
+.box:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.link:hover{
+    background-color: #ffe6a9;
+}
+.link{
+    color: black;
+}
+.box{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: 0;
+}
+.column{
+    float: left;
+}
+.half{
+    width: 50%;
+}
+.picture{
+    width: 220px;
+    text-align: center;
+}
+.description{
+    width: 70%;
+    text-align: left;
+}
+@media screen and (max-width: 1400px) {
+    .description {
+        width: 60%
+    }
+}
+@media screen and (max-width: 800px) {
+    .description {
+       width: 42%
+    }
+    }
+/*PUBLICATIONS*/
+.center{
+    text-align: center;
+}
+.box.pub{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.pub-left{
+    float: left;
+    width: 35%;
+    text-align: left;
+}
+.pub-right{
+    float: left;
+    text-align: left;
+    width: 65%;
+}
+@media screen and (max-width: 1200px) {
+    .pub-left{
+        width: 100%;
+        text-align: center;
+    }
+    .pub-right{
+        width: 100%;
+    }
+}
+.pods{
+    text-align: center;
+}
+.pods a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    padding: 5px;
+
+}
+.podcast {
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+}
+.pods a:hover{
+    background-color: #ffe6a9;
+}
+/*CONTACT STYLING*/
+/*FOOTER STYLING*/
+.footer{
+    bottom: 0;
+    width: 100%;
+    background-color: lightsteelblue;
+    color: black;
+}
+.disclosures{
+    padding-bottom: 15.6%;
+    padding-top: 4%;
+}
+.left{
+    text-align: right;
+    width: 45%;
+    padding-right: 5%;
+    top: 0;
+}
+.left a{
+    padding: 15px;
+    width: 20px;
+    font-size: 20pt;
+}
+.left a:hover{
+    color: #ffe6a9;
+}
+.right{
+    text-align: left;
+    width: 45%;
+    padding-left: 5%;
+}
+.bottom{
+    text-align: center;
+    background-color: lightsteelblue;
+    padding-bottom: 5px;
+}
+.bottom a{
+    text-decoration: none;
+    color: black;
+}
+.bottom a:hover{
+    color: #ffe6a9;
+}
+/*SOCIAL MEDIA BUTTONS*/
+.fa-twitter{
+    color: black;
+    text-decoration: none;
+}
+.fa-instagram{
+    color: black;
+    text-decoration: none;
+}
+.fa-linkedin{
+    color: black;
+    text-decoration: none;
+}
